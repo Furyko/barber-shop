@@ -42,7 +42,7 @@ body {
 .hero-overlay { 
     z-index: 12;    
     position: absolute;    
-    top: 30%;
+    top: 20%;
     left: 0px;    
     right: 0px;    
     margin: auto auto 0 10%; 
@@ -69,7 +69,7 @@ body {
     object-fit: cover; 
 }
 
-@media (min-width: 640px) {
+@media (min-width: 992px) {
     .carousel-inner {
         height: 0;
         padding-bottom: 30%;
@@ -77,5 +77,39 @@ body {
 
     .navbar-title {
         display: contents;
+    }
+
+    .hero-overlay {   
+        top: 10%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .carousel-inner {
+        height: 0;
+        padding-bottom: 30%;
+    }
+
+    .navbar-title {
+        display: contents;
+    }
+
+    .hero-overlay {   
+        top: 20%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .carousel-inner {
+        height: 0;
+        padding-bottom: 30%;
+    }
+
+    .navbar-title {
+        display: contents;
+    }
+
+    .hero-overlay {   
+        top: 30%;
     }
 }
