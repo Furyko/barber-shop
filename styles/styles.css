@@ -4,9 +4,10 @@
     --color-3: #de0a26;
     --color-4: #d1001f;
     --color-5: #c30010;
-    --color-6: #E9EDEF;
-    --color-7: #565F60;
-    --color-8: #000000;
+    --color-6: #ee6b6e;
+    --color-7: #E9EDEF;
+    --color-8: #565F60;
+    --color-9: #000000;
 }
 
 body {
@@ -34,7 +35,7 @@ body {
     --bs-btn-disabled-border-color: var(--color-5)!important;
 }
 
-.hero img {
+.about img {
     width: 100%;
     box-shadow: 6px 6px 0px 0px red;
 }
@@ -67,6 +68,14 @@ body {
 .carousel-item img {
     height: 100%;
     object-fit: cover; 
+}
+
+.color-bg {
+    background-color: var(--color-6);
+}
+
+.color-bg p, .color-bg h2 {
+    color: var(--color-7);
 }
 
 @media (min-width: 992px) {
