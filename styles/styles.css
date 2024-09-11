@@ -37,7 +37,10 @@ body {
 
 .about img {
     width: 100%;
-    box-shadow: 6px 6px 0px 0px red;
+}
+
+.custom-shadow {
+    box-shadow: 6px 6px 0px 0px var(--color-1)!important;
 }
 
 .hero-overlay { 
@@ -76,6 +79,12 @@ body {
 
 .color-bg p, .color-bg h2 {
     color: var(--color-7);
+}
+
+.place-info {
+    color: #fff;
+    background: var(--color-1);
+    border-radius: 0px 0px 10px 10px;
 }
 
 @media (min-width: 992px) {
