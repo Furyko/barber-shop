@@ -73,11 +73,12 @@ body {
     object-fit: cover; 
 }
 
-.color-bg {
+.bg-red {
     background-color: var(--color-6);
 }
 
-.color-bg p, .color-bg h2 {
+.bg-red p, .bg-red h2, .bg-red h3, 
+.bg-black p, .bg-black h2, .bg-black h3 {
     color: var(--color-7);
 }
 
@@ -102,7 +103,7 @@ body {
 
 .place-info {
     color: #fff;
-    background: var(--color-1);
+    background: var(--color-6);
     border-radius: 0px 0px 10px 10px;
 }
 
