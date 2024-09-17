@@ -81,6 +81,25 @@ body {
     color: var(--color-7);
 }
 
+.color-primary {
+    color: var(--color-1);
+}
+
+.circle {
+    border-radius: 50%!important;
+    border-style: solid;
+    border-width: 1px;
+    width: 4rem;
+    height: 4rem;
+}
+
+.circle img {
+    width: 24px;
+    height: 24px;
+    margin-top: 1.1rem !important;
+    margin-left: 1.2rem !important;
+}
+
 .place-info {
     color: #fff;
     background: var(--color-1);
