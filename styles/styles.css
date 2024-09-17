@@ -103,6 +103,10 @@ body {
     margin-left: 1.2rem !important;
 }
 
+#gallery img:hover {
+    box-shadow: var(--color-1) 0px 0 14px 4px;
+}
+
 .place-info {
     color: #fff;
     background: var(--color-6);
