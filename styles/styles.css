@@ -41,6 +41,8 @@ body {
 
 .custom-shadow {
     box-shadow: 6px 6px 0px 0px var(--color-1)!important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
 }
 
 .hero-overlay { 
