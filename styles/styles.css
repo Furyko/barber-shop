@@ -7,7 +7,7 @@
     --color-6: #ee6b6e;
     --color-7: #E9EDEF;
     --color-8: #565F60;
-    --color-9: #000000;
+    --color-9: #171717;
 }
 
 body {
@@ -73,6 +73,10 @@ body {
 .carousel-item img {
     height: 100%;
     object-fit: cover; 
+}
+
+.bg-black {
+    background-color: var(--color-9)!important;
 }
 
 .bg-red {
