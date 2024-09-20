@@ -107,8 +107,15 @@ body {
     margin-left: 1.2rem !important;
 }
 
+#gallery img {
+    transition-duration: 0.3s;
+    transition-property: box-shadow, scale;
+    transition-timing-function: ease-out;
+}
+
 #gallery img:hover {
     box-shadow: var(--color-1) 0px 0 14px 4px;
+    scale: 1.02;
 }
 
 .place-info {
