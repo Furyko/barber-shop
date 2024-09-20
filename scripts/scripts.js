@@ -1,3 +1,4 @@
+const gotoTopButton = document.getElementById('go-top-button')
 const locationsForm = document.getElementById('locations-selector')
 const mapIframe = document.getElementById('map-iframe')
 
@@ -26,12 +27,19 @@ const observer = new IntersectionObserver((entries) => {
         }
     })
 }, {
-    threshold: 0.3
+    threshold: 0.2
 })
 
 locationsForm.addEventListener('submit', (e) => {
     e.preventDefault()
     console.log(e.target)
+})
+
+gotoTopButton.addEventListener('click', (e) => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
 })
 
 const createButtons = () => {
