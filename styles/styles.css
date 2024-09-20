@@ -8,6 +8,7 @@
     --color-7: #E9EDEF;
     --color-8: #565F60;
     --color-9: #171717;
+    --transition-duration: 0.5s
 }
 
 body {
@@ -108,7 +109,7 @@ body {
 }
 
 #gallery img {
-    transition-duration: 0.3s;
+    transition-duration: var(--transition-duration);
     transition-property: box-shadow, scale;
     transition-timing-function: ease-out;
 }
@@ -126,6 +127,21 @@ body {
 
 .brand-logo:hover {
     color: var(--color-9)!important;
+}
+
+/* Transitions */
+.transition-invisible, .transition-visible {
+    transition-duration: var(--transition-duration);
+    transition-property: opacity;
+    transition-timing-function: ease-out;
+}
+
+.transition-invisible {
+    opacity: 0;
+}
+
+.transition-visible {
+    opacity: 1;
 }
 
 @media (min-width: 992px) {

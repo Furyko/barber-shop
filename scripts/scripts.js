@@ -16,6 +16,18 @@ const locationsList = [
     }
 ]
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const element = entry.target
+        if (entry.isIntersecting) {
+            element.classList.replace('transition-invisible','transition-visible')
+        } else {
+            element.classList.replace('transition-visible','transition-invisible')
+        }
+    })
+}, {
+    threshold: 0.3
+})
 
 locationsForm.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -58,4 +70,13 @@ const createButton = (city_name, sucursal_name, phone_number, iframe_url) => {
     button.appendChild(localNameContainer)
 }
 
+const startObserving = () => {
+    const aboutSection = document.querySelectorAll('.transition-invisible');
+    aboutSection.forEach(element => {
+        console.log(element)
+        observer.observe(element)
+    })
+}
+
 createButtons()
+startObserving()
