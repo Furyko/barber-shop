@@ -108,12 +108,6 @@ body {
     margin-left: 1.2rem !important;
 }
 
-#gallery img {
-    transition-duration: var(--transition-duration);
-    transition-property: box-shadow, scale;
-    transition-timing-function: ease-out;
-}
-
 #gallery img:hover {
     box-shadow: var(--color-1) 0px 0 14px 4px;
     scale: 1.02;
@@ -135,10 +129,8 @@ body {
 	height: 60px;
 	bottom: 1rem;
 	right: 1rem;
-	background-color: var(--color-1);
 	border-radius: 50px;
 	text-align: center;
-    border: 2px solid var(--color-2);
 }
 
 .arrow {
@@ -147,8 +139,7 @@ body {
     display: inline-block;
     padding: 10px;
     transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 /* Transitions */
@@ -164,6 +155,12 @@ body {
 
 .transition-visible {
     opacity: 1;
+}
+
+#gallery img {
+    transition-duration: var(--transition-duration);
+    transition-property: box-shadow, scale;
+    transition-timing-function: ease-out;
 }
 
 @media (min-width: 992px) {
