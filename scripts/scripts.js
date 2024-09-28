@@ -1,6 +1,10 @@
 const gotoTopButton = document.getElementById('go-top-button')
-const locationsForm = document.getElementById('locations-selector')
+const locationsElement = document.getElementById('locations-selector')
 const mapIframe = document.getElementById('map-iframe')
+const galleryImages = document.querySelectorAll('.pop')
+const imagePreview = document.getElementById('imagepreview')
+const galleryModal = new bootstrap.Modal(document.getElementById('imagemodal'))
+const closePreviewBtn = document.getElementById('close-preview-btn')
 
 const locationsList = [
     {
@@ -40,6 +44,17 @@ gotoTopButton.addEventListener('click', (e) => {
         top: 0,
         behavior: 'smooth'
     })
+})
+
+galleryImages.forEach((photo) => {
+    photo.addEventListener('click', (e) => {
+        imagePreview.src = e.target.src
+        galleryModal.show()
+    })
+})
+
+closePreviewBtn.addEventListener('click', (e) => {
+    galleryModal.hide()
 })
 
 const createButtons = () => {

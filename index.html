@@ -150,28 +150,28 @@
             <h2>Galería</h2>
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="images/hero-3.webp" class="col-sm mb-4 img-fluid"/>
+                    <img src="images/hero-3.webp" class="col-sm mb-4 img-fluid pop"/>
                 </div>
                 <div class="col-lg-4">
                     <div class="row">
                         <div class="col-lg-12">
-                            <img src="images/gallery-1.webp" class="col-sm mb-4 img-fluid"/>
+                            <img src="images/gallery-1.webp" class="col-sm mb-4 img-fluid pop"/>
                         </div>
                         <div class="col-lg-12">
-                            <img src="images/gallery-1.webp" class="col-sm mb-4 img-fluid"/>
+                            <img src="images/gallery-1.webp" class="col-sm mb-4 img-fluid pop"/>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <img src="images/hero-3.webp" class="col-sm mb-4 img-fluid"/>
+                    <img src="images/hero-3.webp" class="col-sm mb-4 img-fluid pop"/>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="images/hero-1.webp" class="col-sm mb-4 img-fluid"/>
+                    <img src="images/hero-1.webp" class="col-sm mb-4 img-fluid pop"/>
                 </div>
                 <div class="col-lg-6">
-                    <img src="images/hero-1.webp" class="col-sm mb-4 img-fluid"/>
+                    <img src="images/hero-1.webp" class="col-sm mb-4 img-fluid pop"/>
                 </div>
             </div>
         </section>
@@ -268,6 +268,21 @@
             <button class="top-button btn btn-secondary">
                 <span class="arrow"></span>
             </button>
+        </div>
+
+        <!-- Modal para imágenes grandes -->
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">              
+                    <div class="modal-body">
+                        <button id="close-preview-btn" type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <img id="imagepreview" src="" class="imagepreview w-100">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="scripts/bootstrap.min.js"></script>
