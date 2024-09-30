@@ -2,7 +2,6 @@ const gotoTopButton = document.getElementById('go-top-button')
 const galleryImages = document.querySelectorAll('.pop')
 const imagePreview = document.getElementById('imagepreview')
 const galleryModal = new bootstrap.Modal(document.getElementById('imagemodal'))
-const closePreviewBtn = document.getElementById('close-preview-btn')
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -29,10 +28,6 @@ galleryImages.forEach((photo) => {
         imagePreview.src = e.target.src
         galleryModal.show()
     })
-})
-
-closePreviewBtn.addEventListener('click', (e) => {
-    galleryModal.hide()
 })
 
 const startObserving = () => {
