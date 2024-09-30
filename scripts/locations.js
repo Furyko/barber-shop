@@ -2,6 +2,7 @@ const locationsElement = document.getElementById('locations-selector')
 const mapIframe = document.getElementById('map-iframe')
 const sucursalInfoName = document.getElementById('sucursal-info-name')
 const sucursalInfoPhone = document.getElementById('sucursal-info-phone')
+let locationsElements = document.querySelectorAll('#locations-selector button')
 
 const locationsList = [
     {
@@ -48,20 +49,21 @@ const locationsList = [
     }
 ]
 
-locationsElement.addEventListener('click', (e) => {
-    if (e.target && e.target.tagName == 'BUTTON') {
-        const button = e.target
-        const sucursal_id = button.getAttribute('data-id')
+const initButtonsActions = () => {
+    locationsElements = document.querySelectorAll('#locations-selector button')
 
-        const selectedSucursal = locationsList.filter(sucursal => sucursal.id == sucursal_id)[0]
-        mapIframe.src = selectedSucursal.iframe_url
-        sucursalInfoName.innerText = selectedSucursal.sucursal_name
-        sucursalInfoPhone.innerText = selectedSucursal.phone_number
-
-    } else {
-        console.log("no boton")
-    }
-})
+    locationsElements.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const button = e.currentTarget
+            const sucursal_id = button.getAttribute('data-id')
+    
+            const selectedSucursal = locationsList.filter(sucursal => sucursal.id == sucursal_id)[0]
+            mapIframe.src = selectedSucursal.iframe_url
+            sucursalInfoName.innerText = selectedSucursal.sucursal_name
+            sucursalInfoPhone.innerText = selectedSucursal.phone_number
+        })
+    })
+}
 
 const initSucursalInfo = () => {
     const sucursal = locationsList[0]
@@ -108,3 +110,4 @@ const createButton = (city_name, sucursal_name, phone_number, iframe_url, sucurs
 
 initSucursalInfo()
 createButtons()
+initButtonsActions()
