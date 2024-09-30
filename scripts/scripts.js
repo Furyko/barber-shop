@@ -30,12 +30,11 @@ galleryImages.forEach((photo) => {
     })
 })
 
-const startObserving = () => {
+const startObservingSections = () => {
     const aboutSection = document.querySelectorAll('.transition-invisible');
     aboutSection.forEach(element => {
-        console.log(element)
         observer.observe(element)
     })
 }
 
-startObserving()
+startObservingSections()
