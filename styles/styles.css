@@ -65,20 +65,11 @@ header {
 .hero-overlay { 
     z-index: 12;    
     position: absolute;    
-    top: 20%;
     left: 0px;    
     right: 0px;    
-    margin: auto auto 0 10%; 
-    width:80%;   
     background: rgba(240, 255, 255, .5); 
-    padding: 30px 0;
 }
 
-.carousel-inner {
-    height: 0;
-    padding-bottom: 100%;
-}
-  
 .carousel-item {
     position: absolute !important;
     top: 0;
@@ -192,46 +183,19 @@ header {
 }
 
 @media (min-width: 992px) {
-    .carousel-inner {
-        height: 0;
-        padding-bottom: 30%;
-    }
-
     .navbar-title {
         display: contents;
-    }
-
-    .hero-overlay {   
-        top: 10%;
     }
 }
 
 @media (min-width: 1440px) {
-    .carousel-inner {
-        height: 0;
-        padding-bottom: 30%;
-    }
-
     .navbar-title {
         display: contents;
-    }
-
-    .hero-overlay {   
-        top: 20%;
     }
 }
 
 @media (min-width: 2560px) {
-    .carousel-inner {
-        height: 0;
-        padding-bottom: 30%;
-    }
-
     .navbar-title {
         display: contents;
-    }
-
-    .hero-overlay {   
-        top: 30%;
     }
 }
