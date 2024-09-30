@@ -67,6 +67,7 @@ const initButtonsActions = () => {
 
 const initSucursalInfo = () => {
     const sucursal = locationsList[0]
+    mapIframe.src = sucursal.iframe_url
     sucursalInfoName.innerText = sucursal.sucursal_name
     sucursalInfoPhone.innerText = sucursal.phone_number
 }
