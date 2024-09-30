@@ -143,6 +143,12 @@ body {
 }
 
 /* Transitions */
+.brand-logo {
+    transition-duration: var(--transition-duration);
+    transition-property: color;
+    transition-timing-function: ease-out;
+}
+
 .transition-invisible, .transition-visible {
     transition-duration: var(--transition-duration);
     transition-property: opacity;
