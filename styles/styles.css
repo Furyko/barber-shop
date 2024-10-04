@@ -42,6 +42,10 @@ a:active {
     color: var(--color-5);
 }
 
+footer div {
+    color: var(--color-9);
+}
+
 .navbar-title {
     display: none;
 }
