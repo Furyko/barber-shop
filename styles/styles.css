@@ -8,7 +8,9 @@
     --color-7: #E9EDEF;
     --color-8: #565F60;
     --color-9: #171717;
-    --transition-duration: 0.5s
+    --hero-background: #00000080;
+    --transition-duration: 0.3s;
+    --image-transition-duration: 0.5s;
 }
 
 body {
@@ -21,6 +23,23 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+}
+
+div {
+    color: var(--color-7);
+}
+
+a {
+    color: var(--color-9);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-8);
+}
+
+a:active {
+    color: var(--color-5);
 }
 
 .navbar-title {
@@ -67,7 +86,7 @@ header {
     position: absolute;    
     left: 0px;    
     right: 0px;    
-    background: rgba(240, 255, 255, .5); 
+    background: var(--hero-background); 
 }
 
 .carousel-item {
@@ -156,14 +175,14 @@ header {
 }
 
 /* Transitions */
-.brand-logo {
+.brand-logo, a {
     transition-duration: var(--transition-duration);
     transition-property: color;
     transition-timing-function: ease-out;
 }
 
 .transition-invisible, .transition-visible {
-    transition-duration: var(--transition-duration);
+    transition-duration: var(--image-transition-duration);
     transition-property: opacity;
     transition-timing-function: ease-out;
 }
