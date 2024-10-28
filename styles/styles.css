@@ -178,6 +178,105 @@ footer div {
     margin-top: 16px;
 }
 
+/* Carousel */
+.barbers-carousel {
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.barbers-carousel-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 90vw;
+    overflow: hidden;
+}
+
+.barbers-carousel-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.barbers-carousel {
+    position: relative;
+    width: 210px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.barbers-carousel a img {
+    object-fit: cover;
+    height: 300px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 wpx 5px 0 rgba(0, 0, 0, 0.5);
+    transition: .3s ease-in-out;
+}
+
+@media(min-width:768px) {
+    .barbers-carousel {
+        width: 275px;
+    }
+
+    .barbers-carousel a img {
+        width: 250px;
+    }
+}
+
+.barbers-carousel-arrow {
+    border-radius: 30px;
+    background-color: #ffffff00;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    cursor: pointer;
+}
+
+.barbers-carousel-arrow:focus {
+    outline: 0;
+}
+
+.barbers-carousel-arrow svg {
+    width: 12px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.barbers-carousel-prev {
+    left: 0px;
+}
+
+.barbers-carousel-next {
+    right: 0px;
+}
+
+.prev-arrow {
+    border: solid var(--color-7);
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(135deg);
+    margin-top: 10px;
+}
+
+.next-arrow {
+    border: solid var(--color-7);
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg);
+    margin-top: 10px;
+}
+
 /* Transitions */
 .brand-logo, a {
     transition-duration: var(--transition-duration);
