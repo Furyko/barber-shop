@@ -220,7 +220,6 @@ footer div {
     height: 300px;
     width: 200px;
     border-radius: 15px;
-    box-shadow: 0 wpx 5px 0 rgba(0, 0, 0, 0.5);
     transition: .3s ease-in-out;
 }
 
