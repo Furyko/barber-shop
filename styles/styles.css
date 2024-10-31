@@ -215,7 +215,7 @@ footer div {
     height: 100%;
 }
 
-.barbers-carousel a img {
+.barbers-carousel img {
     object-fit: cover;
     height: 300px;
     width: 200px;
@@ -228,7 +228,7 @@ footer div {
         width: 275px;
     }
 
-    .barbers-carousel a img {
+    .barbers-carousel img {
         width: 250px;
     }
 }
